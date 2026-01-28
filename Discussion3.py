@@ -27,8 +27,8 @@ class Rectangle():
 
     # YOUR CODE HERE
     def __eq__(self, other):
-        self_area = self.area_calculator(self.width, self.height) 
-        other_area = other.area_calculator(other.width, other.height)
+        self_area = self.area_calculator() 
+        other_area = other.area_calculator()
         if self_area == other_area:
             return True
         else:
@@ -44,18 +44,22 @@ def main():
     print(r1)
     # call the area_calculator method
     print("Area:", r1.area_calculator())
+    print()
 
 
     r2 = Rectangle(10, 15)
     print(r2)
     print("Area:", r2.area_calculator())
     # call the __eq__ method
-    print(r1 == r2)
+    print("Equal: r1 == r2? ", r1 == r2)
     print()
 
     # you can create additional rectangle objects to 
     # test your code or learn more about how the class behaves
-    pass
+    r3 = Rectangle(10, 15)
+    print(r3)
+    print("Area:", r3.area_calculator())
+    print("Equal: r2 == r3? ", r2 == r3)
 
 if __name__ == "__main__":
     main()
