@@ -7,11 +7,12 @@ class Rectangle():
     def __init__(self, width, height):
         self.width = width
         self.height = height
-    
 
     # Create the "__str__" method
 
     # YOUR CODE HERE
+    def __str__(self):
+         return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
 
 
