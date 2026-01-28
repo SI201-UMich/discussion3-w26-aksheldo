@@ -15,11 +15,11 @@ class Rectangle():
          return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
 
-
     # Create the "area_calculator" method
 
     # YOUR CODE HERE
-
+    def area_calculator(self):
+        return float(self.width * self.height)
 
 
     # Create the "__eq__" method
