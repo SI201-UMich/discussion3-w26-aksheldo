@@ -19,14 +19,20 @@ class Rectangle():
 
     # YOUR CODE HERE
     def area_calculator(self):
-        return float(self.width * self.height)
-
+        return self.width * self.height
 
     # Create the "__eq__" method
     # 
     # Returns a boolean value
 
     # YOUR CODE HERE
+    def __eq__(self, other):
+        self_area = self.area_calculator(self.width, self.height) 
+        other_area = other.area_calculator(other.width, other.height)
+        if self_area == other_area:
+            return True
+        else:
+            return False
 
 
     
